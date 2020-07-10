@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from '../logo.svg';
-import '../App.css';
+
+/* Importación de componenter */
+import SideBar from './SideBar';
+import Content from './Content';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className="App" id="wrapper">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Corporate Dashboard - Admin</title>
+
+        {/* <!-- Custom fonts for this dashboard --> */}
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+        {/*<!-- Custom styles for this dashboard -->*/}
+        {/* <link href="../assets/app.css" rel="stylesheet" /> */}
+      </head> 
+
+    <SideBar />
+    <Content />
+  </div>
+    
   );
 }
 
