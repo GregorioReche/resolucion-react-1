@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 import ContentRowTop from './ContentRowTop';
 import ContentRowBottom from './ContentRowBottom'
@@ -10,11 +10,11 @@ function MainContent(){
             <NavBar />
 
             {/* <!-- Begin Page Content --> */}
-            <div class="container-fluid">
+            <div className="container-fluid">
                 
                 {/* <!-- Page Heading --> */}
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">App Dashboard</h1>
+                <div className="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
                 </div>
                 
                 <ContentRowTop />
